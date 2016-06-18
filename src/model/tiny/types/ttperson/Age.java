@@ -1,4 +1,4 @@
-package tiny.types.ttperson;
+package model.tiny.types.ttperson;
 
 final public class Age {
 	final private int age;
@@ -31,5 +31,10 @@ final public class Age {
 		if (age != other.age)
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "Age [age=" + age + "]";
 	}
 }

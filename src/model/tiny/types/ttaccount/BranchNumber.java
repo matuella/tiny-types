@@ -1,4 +1,4 @@
-package tiny.types.ttaccount;
+package model.tiny.types.ttaccount;
 
 final public class BranchNumber {
 	final private int branchNumber;
@@ -31,5 +31,10 @@ final public class BranchNumber {
 		if (branchNumber != other.branchNumber)
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "BranchNumber [branchNumber=" + branchNumber + "]";
 	}
 }

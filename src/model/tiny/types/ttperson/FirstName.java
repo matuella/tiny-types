@@ -1,4 +1,4 @@
-package tiny.types.ttperson;
+package model.tiny.types.ttperson;
 
 final public class FirstName {
 	final private String firstName;
@@ -34,5 +34,10 @@ final public class FirstName {
 		} else if (!firstName.equals(other.firstName))
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "FirstName [firstName=" + firstName + "]";
 	}
 }

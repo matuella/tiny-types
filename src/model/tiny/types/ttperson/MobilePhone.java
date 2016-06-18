@@ -1,4 +1,4 @@
-package tiny.types.ttperson;
+package model.tiny.types.ttperson;
 
 final public class MobilePhone {
 	final private int mobilePhone;
@@ -31,5 +31,10 @@ final public class MobilePhone {
 		if (mobilePhone != other.mobilePhone)
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "MobilePhone [mobilePhone=" + mobilePhone + "]";
 	}
 }

@@ -1,4 +1,4 @@
-package tiny.types.ttaccount;
+package model.tiny.types.ttaccount;
 
 final public class AccountNumber {
 	final private int accountNumber;
@@ -31,5 +31,10 @@ final public class AccountNumber {
 		if (accountNumber != other.accountNumber)
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "AccountNumber [accountNumber=" + accountNumber + "]";
 	}
 }

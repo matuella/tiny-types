@@ -1,11 +1,11 @@
-package person;
+package model.person;
 
-import account.TTAccount;
-import tiny.types.ttperson.Age;
-import tiny.types.ttperson.FirstName;
-import tiny.types.ttperson.LastName;
-import tiny.types.ttperson.MobilePhone;
-import tiny.types.ttperson.Phone;
+import model.account.TTAccount;
+import model.tiny.types.ttperson.Age;
+import model.tiny.types.ttperson.FirstName;
+import model.tiny.types.ttperson.LastName;
+import model.tiny.types.ttperson.MobilePhone;
+import model.tiny.types.ttperson.Phone;
 
 public class TTPerson {
 
@@ -128,4 +128,11 @@ public class TTPerson {
 			return false;
 		return true;
 	}
+
+	@Override
+	public String toString() {
+		return "TTPerson [firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + ", phone=" + phone
+				+ ", mobilePhone=" + mobilePhone + ", ttAccount=" + ttAccount + "]";
+	}
+	
 }

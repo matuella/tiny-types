@@ -1,4 +1,4 @@
-package tiny.types.ttaccount;
+package model.tiny.types.ttaccount;
 
 final public class DailyWithdrawLimit {
 	final private double dailyWithdrawLimit;
@@ -33,5 +33,10 @@ final public class DailyWithdrawLimit {
 		if (Double.doubleToLongBits(dailyWithdrawLimit) != Double.doubleToLongBits(other.dailyWithdrawLimit))
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "DailyWithdrawLimit [dailyWithdrawLimit=" + dailyWithdrawLimit + "]";
 	}
 }

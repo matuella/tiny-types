@@ -1,9 +1,9 @@
-package account;
+package model.account;
 
-import tiny.types.ttaccount.AccountNumber;
-import tiny.types.ttaccount.Balance;
-import tiny.types.ttaccount.BranchNumber;
-import tiny.types.ttaccount.DailyWithdrawLimit;
+import model.tiny.types.ttaccount.AccountNumber;
+import model.tiny.types.ttaccount.Balance;
+import model.tiny.types.ttaccount.BranchNumber;
+import model.tiny.types.ttaccount.DailyWithdrawLimit;
 
 public class TTAccount {
 
@@ -93,5 +93,11 @@ public class TTAccount {
 		} else if (!dailyWithdrawLimit.equals(other.dailyWithdrawLimit))
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "TTAccount [accountNumber=" + accountNumber + ", branchNumber=" + branchNumber + ", balance=" + balance
+				+ ", dailyWithdrawLimit=" + dailyWithdrawLimit + "]";
 	}
 }

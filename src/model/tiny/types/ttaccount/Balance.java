@@ -1,4 +1,4 @@
-package tiny.types.ttaccount;
+package model.tiny.types.ttaccount;
 
 final public class Balance {
 	final private double balance;
@@ -33,5 +33,10 @@ final public class Balance {
 		if (Double.doubleToLongBits(balance) != Double.doubleToLongBits(other.balance))
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "Balance [balance=" + balance + "]";
 	}
 }

@@ -1,6 +1,6 @@
-package person;
+package model.person;
 
-import account.Account;
+import model.account.Account;
 
 public class Person {
 
